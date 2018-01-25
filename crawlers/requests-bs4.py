@@ -1,3 +1,4 @@
+# 中国500所大学排名数据
 import requests
 import time
 from bs4 import BeautifulSoup
