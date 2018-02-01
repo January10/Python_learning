@@ -1,3 +1,4 @@
+# 算法algorithm
 # 汉诺塔
 def hanoi(n, x, y, z):
     if n == 1:
