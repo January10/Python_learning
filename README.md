@@ -21,4 +21,5 @@
 ### 5.Image processing
 
 ### 6.Others
+1) Distributed process
 

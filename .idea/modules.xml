@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Python_learning.iml" filepath="$PROJECT_DIR$/.idea/Python_learning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../Anaconda/envs/awesomewebappcodes/awesome-python3-webapp/.idea/awesome-python3-webapp.iml" filepath="$PROJECT_DIR$/../../../../Anaconda/envs/awesomewebappcodes/awesome-python3-webapp/.idea/awesome-python3-webapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../.idea/projects.iml" filepath="$PROJECT_DIR$/../../.idea/projects.iml" />
     </modules>
   </component>
