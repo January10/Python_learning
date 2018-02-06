@@ -9,8 +9,7 @@
 ## Plans 
 ### 1.Crawlers
 1) requests-bs4
-2) requests-re
-3) scrapy
+2) selenium_headlesschrome_lxml_asyncio
 
 ### 2.Scientific calculation
 
@@ -22,4 +21,4 @@
 
 ### 6.Others
 1) Distributed process
-
+2) algorithm
