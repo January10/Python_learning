@@ -8,7 +8,7 @@ from selenium.webdriver.chrome.options import Options
 logging.basicConfig(level=logging.INFO)
 
 
-def log(*args):
+def log(args):
     logging.info(args)
 
 
