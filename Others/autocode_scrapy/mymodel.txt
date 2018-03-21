@@ -1,0 +1,10 @@
+##001
+    {info} = scrapy.Field()
+##002
+        item['{info}'] = self.get_{info}(response)
+##003
+    def get_{info}(self, response):
+        {info} = response.xpath('{rule}').extract()
+        {info} = {info}[0] if {info} else 'NULL'
+        return {info}
+##004
