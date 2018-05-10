@@ -70,4 +70,4 @@ def doubanLogin(name, passwd):
 
 
 if __name__ == "__main__":
-    doubanLogin('18021408057', 'www431819910110')
+    doubanLogin('***', '***')
