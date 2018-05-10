@@ -2,7 +2,7 @@
 # coding:utf-8
 __author__ = 'wzq'
 
-from wzq.scrapytools.useragents import USER_AGENT
+from wzq.others.useragents import USER_AGENT
 import random
 import time
 from urllib import request
