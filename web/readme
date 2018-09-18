@@ -1,0 +1,8 @@
+djiango
+1、新建工程：\>django-admin startproject mysite
+2、修改工程：
+    2.1、创建一个具体应用：\>python manage.py startapp helloapp
+    2.2、修改应用的views.py
+    2.3、修改URL路由
+
+3、运行工程：\>python manage.py runserver

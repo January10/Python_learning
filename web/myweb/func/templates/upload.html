@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UpLoad</title>
+</head>
+<body>
+<h2><a href="/" title="首页">首页</a> <a href=".." title="上一页">上一页</a></h2>
+<form enctype="multipart/form-data" action="/func/uploadpost/" method="post">{% csrf_token %}
+    <table width="800" border="0">
+        <tr>
+            <td style="height: 400px;width: 400px">
+                <input type="file" name="old_input" id="old_input" multiple="multiple" onchange="onc()"/>
+                <br>
+                <label hidden for="text">text:</label>
+                <textarea cols="50" rows="25" name="text" id="text" readonly="readonly"
+                          style="resize: none">已存文件如下：&#10;{{ data }}</textarea>
+                <script>
+                    function onc() {
+                        var files = document.getElementById('old_input').files;
+                        var tex = document.getElementById('text');
+                        tex.value = '';
+                        for (var i = 0; i < files.length; i++) {
+                            var str_text = document.getElementById('text');
+                            str_text.value = str_text.value + i + '、' + files[i].name + '\n'
+                        }
+                    }
+                </script>
+                <br>
+            </td>
+        </tr>
+    </table>
+    <input type="submit" name="upload">
+</form>
+
+</body>
+</html>
