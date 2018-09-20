@@ -20,8 +20,9 @@ from django.conf import settings
 from func import views
 
 urlpatterns = [
-                  path('', views.home),
+                  path('', views.login),
+                  path('home/', views.login_post),
                   path('wzq/', admin.site.urls),
-                  path('blog/', include('myblog.urls')),
-                  path('func/', include('func.urls')),
+                  path('home/blog/', include('myblog.urls')),
+                  path('home/func/', include('func.urls')),
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,0 +1,8 @@
+c_spawn("meat",20)
+c_spawn("torch",20)
+c_spawn("resurrectionstone",1)
+
+
+https://mall.qq.com/comm-htdocs/milo_mobile/login.html?s_url=https%3A%2F%2Fmall.qq.com%2Fact%2Fa20180723dnf%2Fm%2Findex.html%3Fplat_support%3Dmqq%26ADTAG%3Ddnfapp.h5%26gameId%3D10014%26roleId%3D12744282%26uniqueRoleId%3D1284450303%26toUin%3D244663831%26serverName%3D%25E6%25B1%259F%25E8%25A5%25BF%25E4%25B8%2589%25E5%258C%25BA%26userId%3D413729834%26serverId%3D96%26token%3DmrYkakBr%26isMainRole%3D1%26areaId%3D37%26areaName%3D%25E6%25B1%259F%25E8%25A5%25BF%26roleJob%3D%25E5%2589%2591%25E7%25A5%259E%26nickname%3DT_January%26roleName%3DINE%25E7%25A0%25B4%25E9%25AD%2582%26uin%3D244663831%26roleLevel%3D90%26&sData=&logo=
+
+https://ui.ptlogin2.qq.com/cgi-bin/login?daid=8&appid=21000115&s_url=https%3A%2F%2Fmall.qq.com%2Fcomm-htdocs%2Fmilo_mobile%2Flogin.html%3Fs_url%3Dhttps%253A%252F%252Fmall.qq.com%252Fact%252Fa20180723dnf%252Fm%252Findex.html%253Fplat_support%253Dmqq%2526ADTAG%253Ddnfapp.h5%2526gameId%253D10014%2526roleId%253D12744282%2526uniqueRoleId%253D1284450303%2526toUin%253D244663831%2526serverName%253D%2525E6%2525B1%25259F%2525E8%2525A5%2525BF%2525E4%2525B8%252589%2525E5%25258C%2525BA%2526userId%253D413729834%2526serverId%253D96%2526token%253DmrYkakBr%2526isMainRole%253D1%2526areaId%253D37%2526areaName%253D%2525E6%2525B1%25259F%2525E8%2525A5%2525BF%2526roleJob%253D%2525E5%252589%252591%2525E7%2525A5%25259E%2526nickname%253DT_January%2526roleName%253DINE%2525E7%2525A0%2525B4%2525E9%2525AD%252582%2526uin%253D244663831%2526roleLevel%253D90%2526%26sData%3D%26logo%3D&hln_css=https://ossweb-img.qq.com/images/js/milo_mobile/biz/login/sy.png&style=8&low_login_enable=1&pt_ttype=1&hln_u_tips=«Î ‰»Îƒ˙µƒQQ∫≈¬Î&
