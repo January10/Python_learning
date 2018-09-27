@@ -5,16 +5,16 @@
     <title>UpLoad</title>
 </head>
 <body>
-<h2><a href="/" title="首页">首页</a> <a href=".." title="上一页">上一页</a></h2>
-<form enctype="multipart/form-data" action="/home/func/uploadpost/" method="post">{% csrf_token %}
-    <table width="800" border="0">
-        <tr>
+<table width="800" border="0">
+    <h2><a href="/" title="首页">首页</a> <a href=".." title="上一页">上一页</a></h2>
+    <tr>
+        <form enctype="multipart/form-data" action="/home/func/uploadpost/" method="post">{% csrf_token %}
             <td style="height: 400px;width: 400px">
                 <input type="file" name="old_input" id="old_input" multiple="multiple" onchange="onc()"/>
                 <br>
                 <label hidden for="text">text:</label>
                 <textarea cols="50" rows="25" name="text" id="text" readonly="readonly"
-                          style="resize: none">已存文件如下(限制文件大小10M)：&#10;{{ data }}</textarea>
+                          style="resize: none">已存文件如下(限制文件大小10M,暂时不提供文件夹下载)：&#10;{{ data }}</textarea>
                 <script>
                     function onc() {
                         var files = document.getElementById('old_input').files;
@@ -27,11 +27,22 @@
                     }
                 </script>
                 <br>
+                <input type="submit" name="upload" value="上传">
             </td>
-        </tr>
-    </table>
-    <input type="submit" name="upload">
-</form>
+        </form>
+        <form enctype="multipart/form-data" action="/home/func/uploadpost/" method="get">{% csrf_token %}
+            <td style="height: 400px;width: 400px">
+                <br>
+                <label hidden for="text">text:</label>
+                <textarea cols="50" rows="25" name="text2" id="text2"
+                          style="resize: none">{{ uploads_str }}</textarea>
+                <br>
+                <input type="submit" name="upload" value="下载">
+            </td>
+        </form>
+    </tr>
+
+</table>
 
 </body>
 </html>

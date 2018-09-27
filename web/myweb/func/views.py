@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.http import StreamingHttpResponse
 import os
+import zipfile
 from myweb.settings import BASE_DIR
 
 auth = False
@@ -52,7 +54,8 @@ def upload(request):
             [str(x) + '、' + y + ' __' + '{0:.2f}'.format(
                 os.path.getsize(os.path.join(path, y)) / 1024 / 1024) + 'MB' + '\n'
              for x, y in enumerate(uploads)])
-        return render(request, 'upload.html', {'data': data})
+        uploads_str = ''.join([x + '\n' for x in uploads if os.path.isfile(os.path.join(path, x))])
+        return render(request, 'upload.html', {'data': data, 'uploads_str': uploads_str})
 
 
 def upload_post(request):
@@ -78,3 +81,22 @@ def upload_post(request):
                 return HttpResponse('Upload success!')
             else:
                 return HttpResponse('Please choose files upload!')
+
+        if request.method == 'GET':
+            files = request.GET['text2']
+            if files:
+                folder = '_upload'
+                path = os.path.join(BASE_DIR, 'func', 'func', folder)
+                file_list = files.split('\r')
+                file_lis = [x for x in file_list if x.strip('\n')]
+                f = zipfile.ZipFile(os.path.join(BASE_DIR, 'func', 'func', 'download.zip'), 'w', zipfile.ZIP_DEFLATED)
+                for ff in file_lis:
+                    f.write(os.path.join(path, ff), ff)
+                f.close()
+                download = open(os.path.join(BASE_DIR, 'func', 'func', 'download.zip'), 'rb')
+                response = StreamingHttpResponse(download)
+                response['Content-Type'] = 'application/octet-stream'
+                response['Content-Disposition'] = 'attachment;filename="download.zip"'
+                return response
+            else:
+                return HttpResponse('Download error!')
