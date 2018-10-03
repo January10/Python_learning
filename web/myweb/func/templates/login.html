@@ -1,23 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Login</title>
-</head>
-<body>
-<h3>登陆</h3>
+{% extends 'base.html' %}
 
-<form enctype="multipart/form-data" action="/home/" method="post">{% csrf_token %}
-    <h4>
-        <li><label for="user">账号</label></li>
-        <textarea cols="20" rows="2" name="user" id="user" style="resize: none"></textarea>
-    </h4>
-    <h4>
-        <li><label for="passwd">密码</label></li>
-        <textarea cols="20" rows="2" name="passwd" id="passwd" style="resize: none"></textarea>
-    </h4>
-    <input type="submit" name="upload">
-</form>
+{% block body %}
 
-</body>
-</html>
+<div class="ui text container segment">
+    <h1 style="text-align:center;">MyWeb</h1>
+    <form class="ui form" enctype="multipart/form-data" action="/home/" method="post">{% csrf_token %}
+        <div class="field">
+            <li><label>Username</label></li>
+            <input type="text" name="user" placeholder="Username">
+        </div>
+        <div class="field">
+            <li><label>Password</label></li>
+            <input type="text" name="passwd" placeholder="Password">
+        </div>
+        <button class="ui blue button" type="submit">Login</button>
+    </form>
+</div>
+{% endblock %}
+
+
+
+
+

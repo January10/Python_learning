@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+<head>
+    <meta charset="UTF-8">
+    <title>MyWeb</title>
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.css">-->
+    <link rel="stylesheet" href="{% static 'css/semantic.css' %}">
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/semantic.min.js' %}"></script>
+</head>
+<body>
+{% block menu %}{% endblock %}
+
+{% block body %}{% endblock %}
+</body>
+</html>

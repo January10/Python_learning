@@ -23,6 +23,5 @@ urlpatterns = [
                   path('', views.login),
                   path('home/', views.login_post),
                   path('wzq/', admin.site.urls),
-                  path('home/blog/', include('myblog.urls')),
                   path('home/func/', include('func.urls')),
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

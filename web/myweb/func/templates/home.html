@@ -1,26 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-</head>
-<body>
-<h2>首页</h2>
-<h3>
-    <li><a href="myblog" title="博客">博客</a></li>
-</h3>
-<h3>
-    <li><a href="crawl" title="爬虫">爬虫</a></li>
-</h3>
-<h3>
-    <li><a href="analysis" title="数据分析">数据分析</a></li>
-</h3>
-<h3>
-    <li><a href="machinelearning" title="机器学习">机器学习</a></li>
-</h3>
-<h3>
-    <li><a href="func" title="其他功能">其他功能</a></li>
-</h3>
+{% extends 'base.html' %}
+{% block menu %}
+<div class="ui inverted blue menu">
+    <div class="header item">
+        <a href="/home/">Home
+            <i class="content icon"></i>
+        </a></div>
+    <a class="item">Blog</a>
+    <a class="item">Crawler</a>
+    <a class="item">Data</a>
+    <a class="item" href="/home/func/">Other</a>
+</div>
+{% endblock %}
 
-</body>
-</html>
+{% block body %}
+<h2 class="ui header">Welcome!</h2>
+{% endblock %}
+
+
+
+
+
